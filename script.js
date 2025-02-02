@@ -64,7 +64,8 @@ submit.addEventListener("click", function(e) {
     }
     
     if (firstName.value !== "" && lastName.value !== "" && email.value !== "" && !(email.value.indexOf("@") === -1) && message.value !== "" && agree.checked && (general.checked || request.checked) ) {
-        success.style.display = "block";
+        success.style.opacity = "100%";
+        success.style.top = "10%"; 
         window.scrollTo(0, 0);
         e.preventDefault();
         setTimeout(function() {
@@ -81,7 +82,8 @@ submit.addEventListener("click", function(e) {
             message.style.border = "2px solid var(--Grey500medium)";
         }, 0);
         setTimeout(() => {
-            success.style.display = "none";
+            success.style.opacity = "0";
+            success.style.top = "-20%";
         }, 3000);
     }
 });

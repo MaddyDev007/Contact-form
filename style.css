@@ -152,15 +152,18 @@ textarea {
   outline: none;
 }
 .success {
-  display: none;
+  display: block;
   background-color: var(--Grey900darker);
   color: var(--White);
   padding: 1.5rem;
   border-radius: 0.5rem;
   width: max-content;
   position: absolute;
-  left: 50%;
+  top: -20%;
   transform: translate(-50%, -50%);
+  left: 50%;
+  transition: all 0.5s;
+  opacity: 0%;
 }
 .image {
   display: flex;
